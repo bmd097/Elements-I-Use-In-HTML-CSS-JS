@@ -1,0 +1,5 @@
+this is a very simple thing. i just traversed the whole string i.e, the css/js file
+and checked if the char at any index is
+1.  not  ' ' then simply add it to result;
+2. if ' ' then if (currResult[currResult.length-1]!=' ') then append this ' ' to result
+             or not....

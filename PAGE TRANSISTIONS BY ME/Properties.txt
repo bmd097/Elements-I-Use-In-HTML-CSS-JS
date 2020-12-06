@@ -1,0 +1,21 @@
+// It is recomended to use these over sections.
+// 3 properties - HENCE, Faster Page Loading
+// Fewer sections load - Best Loading Speed (LTS)
+
+** ADD THE FOLLOWING REQUIRED CLASS TO YOUR SECTION **
+
+Up Page Transistions -> .page-Up-animation
+Left Page Transistions -> .page-left-animation
+Right Page Transistions -> .page-right-animation
+
+
+Also make sure to add this one **************>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+*********************************************>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+Include the files present...
+css & js....

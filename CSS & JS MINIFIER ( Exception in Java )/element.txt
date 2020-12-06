@@ -1,0 +1,45 @@
+<<<<<<<<<<<<<<<<<<<<<<<<<<<CSS Minifier------------------------------------------>>>>>>>>>>>>
+File file = new File("style.css"); 
+	    Scanner sc = new Scanner(file); 
+	    String res="";
+	    while (sc.hasNextLine()) 
+	      res+=sc.nextLine();
+	    boolean check=false;
+	    String result="";
+	    for(int i=0;i<res.length();i++){
+	        if(res.charAt(i)==':'){
+	            result+=res.charAt(i);
+	            check=true;
+	        }else if(res.charAt(i)==';'){
+	            result+=res.charAt(i);
+	            check=false;
+	        }
+	        else if(res.charAt(i)==' '){
+	            if(check && (result.charAt(result.length()-1)!=' ')) 
+	            	result+=' ';
+	        }else result+=res.charAt(i);
+	    }
+	
+	    PrintWriter printWriter=new PrintWriter(new File("result.css"));
+	    printWriter.print(result);
+		printWriter.flush();
+		printWriter.close();
+
+
+
+<<<<<<<<<<JS Minifier------------------------------------------>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+File file = new File("script.js"); 
+	    Scanner sc = new Scanner(file); 
+	    String res="";
+	    while (sc.hasNextLine()) 
+	      res+=sc.nextLine();
+	    String result="";
+	    for (int i = 0; i < res.length(); i++) 
+			if(res.charAt(i)==' ') {
+				if(result.length()==0 || (result.charAt(result.length()-1)!=' '))
+					result+=res.charAt(i);
+			}else result+=res.charAt(i);
+	    PrintWriter printWriter=new PrintWriter(new File("result.js"));
+	    printWriter.print(result);
+		printWriter.flush();
+		printWriter.close();
